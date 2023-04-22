@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-      MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-   referrer" />
+    <title>Belajar Tailwind</title>
+    <!-- <style>
+        *{
+            border: 1px solid red;
+        }
+    </style> -->
+</head>
+<body class="bg-primary">
+    <!-- HEADER -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#Home" class=" text-xl text-white bg-secondary uppercase font-[900] block py-2 px-5 rounded-lg">Pas</a>
+                </div>
+                <div class="flex items-center p-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-4 shadow-lg rounded-lg max-w-[250px] w-full right-4 bg-white top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex font-[600]">
+                            <li class="group">
+                                <a href="#Home" class="text-base text-all py-2 mx-8 flex group-hover:text-blue-600 active:#Home">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#About" class="text-base text-all py-2 mx-8 flex group-hover:text-blue-600">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#skill" class="text-base text-all py-2 mx-8 flex group-hover:text-blue-600">Skill</a>
+                            </li>
+                            <li class="group">
+                                <a href="#Home" class="text-base text-all py-2 mx-8 flex group-hover:text-blue-600">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- AKHIR HEADER -->
+
+    <!-- HERO SECTION -->
+    <section id="Home" style="background-image: url(1.png);" class="pt-36 bg-primary bg-cover ">
+        <div class=" flex">
+            <div class="container text-center mx-auto">
+                <h1 class="text-lg font-medium">Hallo semua👋,saya</h1>
+                <span id="name" class="text-[10vw] p-2 font-bold text-secondary"> Prayoga Ajitya</span>
+                <div class="text-[20px] md:text[25px] lg:text-[30px]">
+                    <a href="#"><i class="fa-brands fa-instagram cursor-pointer px-2 text-[#E1306C]"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp cursor-pointer px-2 text-[#25D366]"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook cursor-pointer px-2 text-[#4267B2]"></i></a>
+                    <a href=""><i class="fa-brands fa-github cursor-pointer px-2 text-[#333]"></i></a>
+                </div>
+                <div class="p-7">
+                    <a class="bg-secondary text-white py-3 px-8 font-semibold rounded-full hover:bg-all hover:text-secondary transition duration-300 ease-in-out " href="#">About</a>
+                </div>
+                <div class="flex justify-between ">
+                    <span class="text-secondary vertical-rl upright">website</span>
+                    <span class=" text-secondary vertical-rl upright">portofolio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AKHIR HERO SECTION -->
+
+    <!-- ABOUT SECTION -->
+    <section id="About" class= mt-12 md:flex>
+        <div class="lg:w-full p-8 bg-secondary text-center sm:w-[95%] md:rounded-lg md:w-[80%] md:flex md:mx-auto lg:rounded-none lg:flex lg:items-center">
+            <img class="rounded-md  mb-3 sm:w-1/3 md:w-1/2 lg:w-1/3" src="prayoga ajitya.jpg" alt="">
+            <div class="md:ml-7 lg:ml-7">
+                <h1 class=" text-primary uppercase font-[700] sm:text-[15px] md:text-[30px] lg:text-[50px]">About us</h1>
+                <h5 class="text-white capitalize font-[600] mb-3">Programmer Frontend</h5>
+                <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione in vel beatae facilis. Dolorum, totam. Similique fuga obcaecati nulla commodi minus modi quis dicta quo dolor, sequi odit sit eveniet!</p>
+            </div>
+        </div>
+    </section>
+    <!-- AKHIR ABOUT SECTION -->
+
+    <!-- SKILLS SECTION -->
+    <section id="skill" class="mt-12">
+        <div  class="">
+            <h1 class="text-center text-[30px] font-[700] mb-3">My Skills</h1>
+            <ul class="flex flex-col text-center">
+                <li class="bg-white w-[95%] mx-auto px-20 py-4 cursor-pointer uppercase font-[600] mt-2"><i class="fa-brands fa-html5 mr-2"></i>html</li>
+                <li class="bg-white w-[95%] mx-auto px-20 py-4 cursor-pointer uppercase font-[600] mt-2"><i class="fa-brands fa-css3-alt mr-2"></i>css</li>
+                <li class="bg-white w-[95%] mx-auto px-20 py-4 cursor-pointer uppercase font-[600] mt-2"><i class="fa-brands fa-sass mr-2"></i>sass</li>
+                <li class="bg-white w-[95%] mx-auto px-20 py-4 cursor-pointer uppercase font-[600] mt-2"><i class="fa-brands fa-tailwind mr-2"></i>Tailwind</li>
+            </ul>
+        </div>
+    </section>
+    <!-- AKHIR SKILLS SECTION -->
+
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
