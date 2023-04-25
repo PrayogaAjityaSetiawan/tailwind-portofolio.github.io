@@ -18,6 +18,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('tailwind-scrollbar'),
     plugin(function({ addUtilities }) {
       addUtilities({
         '.horizontal-tb': {
